@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #082f83;
+}
+
+body,
+.quote-input {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  background-color: #f0db4f;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 700px;
+  max-width: 90%;
+}
+
+.timer {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #f0db4f;
+  font-weight: bold;
+}
+
+.Title {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0db4f;
+}
+
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+  background-color: transparent;
+  border: 2px solid #a1922e;
+  outline: none;
+  width: 100%;
+  height: 8rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.quote-input:focus {
+  border-color: black;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+.results {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #054555;
+  background-color: #e6cb21;
+}
+
+.result-item {
+  margin-bottom: 1rem;
+}
+
+.result-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f0db4f;
+}
+
+.result-value {
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #a1922e;
+}
+
+.result-correct {
+  color: green;
+}
+
+.result-incorrect {
+  color: red;
+  text-decoration: underline;
+}
+
+.result-wpm {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.result-message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
